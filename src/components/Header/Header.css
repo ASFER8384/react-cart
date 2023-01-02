@@ -1,0 +1,19 @@
+.headerr{
+    width: 100%;
+    background-color:orange;
+    height: 60px;
+}
+.headerr ul{
+    display: flex;
+    justify-content: center;
+    gap: 70%;
+    /* align-items: center; */
+    height: 60px;
+    line-height: 60px;
+    list-style: none;
+}
+.headerr ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    position: absolute;
+}

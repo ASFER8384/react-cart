@@ -1,0 +1,110 @@
+.list{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    /* background: linear-gradient(#9BE8EB #EAE1E9 #FCB7D1); */
+    /* background-color:whitesmoke ; */
+    flex-wrap: wrap;
+    transition: all .4s ease-in-out;
+}
+.home{
+    padding: 40px;
+}
+.imagebody{
+    /* background-color: rgba(128, 128, 128, 0.831); */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 30px 0px 0px;
+    background-color:grey;
+    position: relative;
+}
+
+.list-body{
+    width: 300px;
+    height: 400px;
+    /* background-color: brown; */
+    box-shadow: 5px 5px 5px  #d85c27;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    background-color:whitesmoke  ;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.4s transform ease-out;
+
+    
+}
+.list-body:hover{
+    border: 2px solid black;
+}
+
+.image{
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+p{
+    width: 300px;
+    margin-bottom: 10px;
+   
+}
+h2{
+    color: #d85c27;
+}
+h3{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #000;
+}
+.list-body::after{
+    background-color: rgba(0, 0, 0, 0.869);
+    content: "";
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    transform: translate(0%,-100%)rotate(0deg);
+    transition: 0.3s transform ease-out;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    z-index: 1;
+    opacity: .9;
+}
+
+.list-body:hover::after{
+    transform: translate(0,0);
+}
+.cartbutton{
+    z-index: 99;
+    position: absolute;
+    top: -100%;
+}
+.list-body:hover .cartbutton{
+top: 50%;
+transition: 0.9s transform ease-out;
+}
+.btn{
+    padding: 8px 8px;
+    background-color: #d85c27;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 5px #d85c27;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
